@@ -29,6 +29,6 @@ float average(arraySize, totalScore)
 {
     
     float averageScore = (float)totalScore/arraySize;
-    printf("your average is: %f", averageScore);
+    printf("your average is : %f \n", averageScore);
 
     }
