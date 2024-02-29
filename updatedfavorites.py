@@ -4,8 +4,6 @@ db = SQL("sqlite:///favorites.db")
 
 favorite = input("Favorite: ")
 
-rows = db.execute("SELECT COUNT(*) AS n FROM favorites WHERE genres = 'Comedy'")
+rows = db.execute("SELECT COUNT(*) AS n FROM favorites WHERE genres = ?", favorite) #single question marks are used as placeholders.
 
-row = rows[0]
-for row in rows:
-    print(rows[0])
+print(rows[0]["n"])
