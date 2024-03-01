@@ -1,0 +1,39 @@
+<!DOCTYPE html>  <! This format is what we use to leave comments. Also, !DOCTYPE defines the document type>
+
+<html lang ="en"> <! lang="en" is an attribute, the the first part is a tag, everything else related to the html are called html elements.>
+    <head>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function(){
+                let input = document.querySelector('input');
+                input.onkeyup = function() 
+                {
+                        let p = document.querySelector('p');
+                        if(input.value)
+                        {
+                            p.innerHTML= 'hello,' + input.value;
+                        }
+                        else 
+                        {
+                            p.innerHTML = 'hello, whoever you are';
+                        }
+                    };
+                });
+                
+
+            
+            
+        </script>
+        <title>hello</title>
+    </head>
+    <body>
+        <form>
+            <input autocomplete="off" autofocus placeholder="Name" type="text">
+            
+        </form>
+        <p></p>
+        
+    </body>
+
+
+</html>

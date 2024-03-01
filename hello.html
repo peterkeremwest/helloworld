@@ -3,11 +3,32 @@
 <html lang ="en"> <! lang="en" is an attribute, the the first part is a tag, everything else related to the html are called html elements.>
     <head>
         <title>
-            hello, title
+            hello, User
         </title>
+        <script src="hello.js">
+/*
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelector('form').addEventListener('submit', function(event)
+                {
+                    let name=document.querySelector('#name').value;
+                    alert('hello, ' + name);
+                    event.preventDefault();
+                });
+                
+            });
+*/
+            
+            
+        </script>
     </head>
     <body>
-        hello, body
+        <form>
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+            <button type="submit">
+                Greet
+            </button>
+        </form>
+        
     </body>
 
 
